@@ -5,12 +5,13 @@
     <groupId>no.knowit</groupId>
     <artifactId>lombok-tutorial</artifactId>
     <version>1.0</version>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.0</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
