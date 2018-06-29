@@ -21,4 +21,5 @@ Eksempler: Data, Getter, Setter, Builder, ToString
 - Manipulerer Abstract Syntax Tree under kompilering
  
 
-
+### Mer info rundt hvordan lombok fungerer:
+http://notatube.blogspot.com/2010/11/project-lombok-trick-explained.html
