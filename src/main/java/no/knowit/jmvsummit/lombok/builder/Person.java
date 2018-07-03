@@ -1,12 +1,10 @@
 package no.knowit.jmvsummit.lombok.builder;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 import java.time.LocalDate;
 
+@ToString
 @Getter
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
@@ -20,11 +18,11 @@ public class Person {
 class Main {
     public static void main(String[] args) {
         Person person = Person.builder()
-                .firstname("")
+                .firstname("thomas")
                 .middlename("")
-                .lastname("")
-                .birthdate(LocalDate.MAX)
-                .build();
+                .lastname("andersen")
+                .birthdate(LocalDate.of(2000, 1, 1))
+                .build();   
         
         System.out.println(person);
     }

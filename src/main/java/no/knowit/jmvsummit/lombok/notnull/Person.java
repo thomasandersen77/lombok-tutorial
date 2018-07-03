@@ -1,28 +1,23 @@
 package no.knowit.jmvsummit.lombok.notnull;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Getter
-@Builder
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
 public class Person {
-    private String firstname;
-    private String lastname;
+    private @NonNull String firstname;
+    private @NonNull String lastname;
     private LocalDate birthdate;
 }
 
 class Main {
     public static void main(String[] args) {
-        Person person = Person.builder()
-                .firstname("")
-                .lastname("")
-                .birthdate(LocalDate.MAX)
-                .build();
-        System.out.println(person);
+        Person person = new Person("thomas", "andersen", LocalDate.of(2000, 1, 1));
+
+        System.out.println(person.getFirstname());
+        System.out.println(person.getLastname());
+        System.out.println(person.getBirthdate());
     }
 }

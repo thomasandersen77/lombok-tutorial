@@ -18,7 +18,9 @@ class Main {
         person.setFirstname("");
         person.setLastname("");
         person.setMiddlename("");
-        person.setBirthdate(LocalDate.MAX);
+        person.setBirthdate(LocalDate.of(1977, 1, 1));
+
         System.out.println(person);
+        System.out.println(person.hashCode());
     }
 }
