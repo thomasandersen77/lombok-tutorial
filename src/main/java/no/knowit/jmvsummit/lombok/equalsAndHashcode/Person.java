@@ -23,7 +23,7 @@ class Main {
         person1.setBirthdate(LocalDate.of(2000, 1, 1));
 
         Person person2 = new Person();
-        person2.setFirstname("thomas");
+        person2.setFirstname("thomasx");
         person2.setLastname("andersen");
         person2.setBirthdate(LocalDate.of(2000, 1, 1));
 

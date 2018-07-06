@@ -7,7 +7,6 @@ import java.time.LocalDate;
 @Data
 public class Person {
     private String firstname;
-    private String middlename;
     private String lastname;
     private LocalDate birthdate;
 }
@@ -15,12 +14,11 @@ public class Person {
 class Main {
     public static void main(String[] args) {
         Person person = new Person();
-        person.setFirstname("");
-        person.setLastname("");
-        person.setMiddlename("");
+        person.setFirstname("thomas");
         person.setBirthdate(LocalDate.of(1977, 1, 1));
 
-        System.out.println(person);
+        System.out.println(person.getFirstname());
+        System.out.println(person.getLastname());
         System.out.println(person.hashCode());
     }
 }

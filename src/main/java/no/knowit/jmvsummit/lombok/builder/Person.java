@@ -19,10 +19,10 @@ class Main {
     public static void main(String[] args) {
         Person person = Person.builder()
                 .firstname("thomas")
-                .middlename("")
+                .middlename("mellomnavn")
                 .lastname("andersen")
                 .birthdate(LocalDate.of(2000, 1, 1))
-                .build();   
+                .build();
         
         System.out.println(person);
     }

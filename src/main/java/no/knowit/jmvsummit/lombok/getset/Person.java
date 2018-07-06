@@ -6,7 +6,6 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
-@NoArgsConstructor
 public class Person {
     private String firstname;
     private String lastname;
